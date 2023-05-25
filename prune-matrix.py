@@ -168,8 +168,8 @@ def main(arguments):
     matrix, removed = pruneMatrix(distanceDf, cutoff)
     
     # A final report
-    for sequence in removed:
-        print(f'Removed {removed[0]} with pairwise distance {removed[1]} and average distance {removed[2]}')
+    for removedSequence in removed:
+        print(f'Removed {removedSequence[0]} with pairwise distance {removedSequence[1]} and average distance {removedSequence[2]}')
     print()
     print ("Kept:")
     for sequence in matrix.index.values.tolist():
